@@ -1,0 +1,48 @@
+Name: 99389354
+Phone: 01999909999999389354
+Address: Khilga Dhaka
+
+Product: Tutypest
+Quantity: 1
+Price: 120
+Product: Brash
+Quantity: 3
+Price: 55
+
+Total: 285
+
+
+
+
+Name: 435t
+Phone: 534543543435435t
+Address: dfgrfg regsdfgrtg
+
+Product: sdfdffg
+Quantity: 3
+Price: 345435
+Product: dsffgdfgfrg
+Quantity: 454
+Price: 53453
+
+Total: 25303967
+
+
+
+
+Name: Md Siamul Islam Soaib
+Phone: 01773069620
+Address: Bagbari Tangail Dhaka
+
+Product: Tomato
+Quantity: 2
+Price: 60
+Product: Potato
+Quantity: 2
+Price: 30
+
+Total: 180
+
+
+
+
