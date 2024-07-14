@@ -41,6 +41,7 @@ Certainly! Here's the complete text with all the sections included in one messag
 - [C Read Files](#c-read-files)
 - [C Structures](#c-structures)
 - [C Enums](#c-enums)
+- [Advance Topic](#advence)
 
 ## C Syntax
 
@@ -505,6 +506,305 @@ int main() {
     printf("Today is %d\n", today);
     return 0;
 }
+```
+## advence
+### Structures and Unions:
+**Structures** allow you to group different data types together under one name. They are useful for organizing data in a meaningful way. Example:
+```c
+struct Person {
+    char name[50];
+    int age;
+    float salary;
+};
+```
+
+**Unions** are similar to structures but allocate enough memory to hold the largest member. Only one member of the union can be accessed at a time. Example:
+```c
+union Data {
+    int i;
+    float f;
+    char str[20];
+};
+```
+
+### File Handling:
+File handling in C involves operations like opening, reading, writing, and closing files. Example of writing to a file:
+```c
+FILE *fp;
+fp = fopen("file.txt", "w");
+fprintf(fp, "Hello, File World!");
+fclose(fp);
+```
+
+### Dynamic Memory Allocation:
+C provides functions like `malloc()`, `calloc()`, `realloc()`, and `free()` for dynamic memory allocation. Example:
+```c
+int *ptr;
+ptr = (int *) malloc(5 * sizeof(int));
+if (ptr != NULL) {
+    ptr[0] = 1;
+    ptr[1] = 2;
+    // Use ptr
+    free(ptr);
+}
+```
+
+### Linked Lists:
+A linked list is a linear data structure where elements are not stored at contiguous memory locations. Each element (node) contains data and a pointer to the next node. Example:
+```c
+struct Node {
+    int data;
+    struct Node *next;
+};
+
+// Example of creating nodes and linking them
+struct Node *head = NULL;
+struct Node *second = NULL;
+struct Node *third = NULL;
+
+head = malloc(sizeof(struct Node));
+second = malloc(sizeof(struct Node));
+third = malloc(sizeof(struct Node));
+
+head->data = 1;
+head->next = second;
+
+second->data = 2;
+second->next = third;
+
+third->data = 3;
+third->next = NULL;
+```
+
+### Stack and Queue:
+**Stack** follows the Last In First Out (LIFO) principle. Example:
+```c
+#define MAX 100
+int stack[MAX];
+int top = -1;
+
+void push(int item) {
+    if (top >= MAX - 1) {
+        printf("Stack Overflow");
+        return;
+    }
+    stack[++top] = item;
+}
+
+int pop() {
+    if (top < 0) {
+        printf("Stack Underflow");
+        return -1;
+    }
+    return stack[top--];
+}
+```
+
+**Queue** follows the First In First Out (FIFO) principle. Example:
+```c
+#define MAX 100
+int queue[MAX];
+int front = -1, rear = -1;
+
+void enqueue(int item) {
+    if (rear == MAX - 1) {
+        printf("Queue Overflow");
+        return;
+    }
+    if (front == -1) front = 0;
+    queue[++rear] = item;
+}
+
+int dequeue() {
+    if (front == -1 || front > rear) {
+        printf("Queue Underflow");
+        return -1;
+    }
+    return queue[front++];
+}
+```
+
+### Trees:
+Trees are hierarchical data structures with a root node and child nodes. Example:
+```c
+struct TreeNode {
+    int data;
+    struct TreeNode *left;
+    struct TreeNode *right;
+};
+
+// Example of creating a tree
+struct TreeNode *root = NULL;
+root = malloc(sizeof(struct TreeNode));
+root->data = 1;
+root->left = malloc(sizeof(struct TreeNode));
+root->left->data = 2;
+root->left->left = NULL;
+root->left->right = NULL;
+root->right = malloc(sizeof(struct TreeNode));
+root->right->data = 3;
+root->right->left = NULL;
+root->right->right = NULL;
+```
+
+Certainly! Here are brief explanations and examples of more searching and sorting algorithms in C:
+
+### Sorting Algorithms:
+
+#### Bubble Sort:
+Bubble Sort repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
+```c
+void bubbleSort(int arr[], int n) {
+    int i, j;
+    for (i = 0; i < n-1; i++) {
+        for (j = 0; j < n-i-1; j++) {
+            if (arr[j] > arr[j+1]) {
+                int temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+        }
+    }
+}
+```
+
+#### Quick Sort:
+Quick Sort is a divide-and-conquer algorithm that selects a pivot element and partitions the array around the pivot.
+```c
+void swap(int* a, int* b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int partition(int arr[], int low, int high) {
+    int pivot = arr[high];
+    int i = (low - 1);
+    
+    for (int j = low; j <= high - 1; j++) {
+        if (arr[j] < pivot) {
+            i++;
+            swap(&arr[i], &arr[j]);
+        }
+    }
+    swap(&arr[i + 1], &arr[high]);
+    return (i + 1);
+}
+
+void quickSort(int arr[], int low, int high) {
+    if (low < high) {
+        int pi = partition(arr, low, high);
+        
+        quickSort(arr, low, pi - 1);
+        quickSort(arr, pi + 1, high);
+    }
+}
+```
+
+#### Selection Sort:
+Selection Sort repeatedly finds the minimum element from the unsorted part of the array and swaps it with the first unsorted element.
+```c
+void selectionSort(int arr[], int n) {
+    int i, j, min_idx;
+    for (i = 0; i < n-1; i++) {
+        min_idx = i;
+        for (j = i+1; j < n; j++) {
+            if (arr[j] < arr[min_idx])
+                min_idx = j;
+        }
+        int temp = arr[min_idx];
+        arr[min_idx] = arr[i];
+        arr[i] = temp;
+    }
+}
+```
+
+#### Insertion Sort:
+Insertion Sort builds the final sorted array one item at a time by inserting each item into its correct position.
+```c
+void insertionSort(int arr[], int n) {
+    int i, key, j;
+    for (i = 1; i < n; i++) {
+        key = arr[i];
+        j = i - 1;
+        
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j--;
+        }
+        arr[j + 1] = key;
+    }
+}
+```
+
+### Searching Algorithms:
+
+#### Binary Search:
+Binary Search works on sorted arrays by repeatedly dividing the search interval in half.
+```c
+int binarySearch(int arr[], int l, int r, int x) {
+    while (l <= r) {
+        int mid = l + (r - l) / 2;
+        
+        if (arr[mid] == x)
+            return mid;
+        
+        if (arr[mid] < x)
+            l = mid + 1;
+        else
+            r = mid - 1;
+    }
+    
+    return -1;
+}
+```
+
+#### Linear Search:
+Linear Search sequentially checks each element of the list until a match is found or the whole list has been searched.
+```c
+int linearSearch(int arr[], int n, int x) {
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == x)
+            return i;
+    }
+    
+    return -1;
+}
+```
+
+### Multithreading:
+C supports multithreading via libraries like POSIX threads (`pthread`). Example of creating threads:
+```c
+#include <pthread.h>
+#include <stdio.h>
+
+void *printHello(void *threadid) {
+    long tid;
+    tid = (long)threadid;
+    printf("Hello World! Thread ID, %ld\n", tid);
+    pthread_exit(NULL);
+}
+
+int main () {
+    pthread_t threads[5];
+    int rc;
+    long t;
+    
+    for (t = 0; t < 5; t++) {
+        rc = pthread_create(&threads[t], NULL, printHello, (void *)t);
+        if (rc) {
+            printf("ERROR; return code from pthread_create() is %d\n", rc);
+            return -1;
+        }
+    }
+    
+    pthread_exit(NULL);
+}
+```
+
+### Memory Management:
+Involves managing memory efficiently using techniques like malloc, free, and avoiding memory leaks.
+
 ```
 
 ### Projects
