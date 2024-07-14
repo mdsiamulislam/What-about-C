@@ -805,7 +805,7 @@ int main () {
 ### Memory Management:
 Involves managing memory efficiently using techniques like malloc, free, and avoiding memory leaks.
 
-```
+
 
 ### Projects
 
@@ -879,11 +879,5 @@ Feel free to explore the solutions to these problems. Happy coding!
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
-```
-
-```
-
----
 
 Thank you for exploring these C programming examples and explanations! Special thanks to ChatGPT and W3Schools for assisting in this endeavor.
