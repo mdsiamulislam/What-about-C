@@ -1,0 +1,982 @@
+<html><head><style>body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4 {
+            color: #333;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+pre {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            overflow: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }</style></head><body><h1 id="what-about-c">What about C</h1>
+<p>Welcome to the &quot;What about C&quot; repository!</p>
+<p>This repository serves as a comprehensive resource for learning and practicing C programming. Whether you&#39;re a beginner or an experienced programmer, you&#39;ll find valuable content here to enhance your understanding and skills in C programming.</p>
+<h2 id="purpose">Purpose</h2>
+<p>The primary goal of this repository is to provide a structured approach to learning C programming through code breakdowns, projects, and problem-solving exercises. By exploring the content offered here, you&#39;ll gain a solid foundation in C programming and develop the confidence to tackle more complex challenges.</p>
+<p>Certainly! Here&#39;s the complete text with all the sections included in one message:</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#c-syntax">C Syntax</a></li>
+<li><a href="#c-output">C Output</a></li>
+<li><a href="#c-comments">C Comments</a></li>
+<li><a href="#c-variables">C Variables</a></li>
+<li><a href="#c-data-types">C Data Types</a></li>
+<li><a href="#c-constants">C Constants</a></li>
+<li><a href="#c-operators">C Operators</a></li>
+<li><a href="#c-booleans">C Booleans</a></li>
+<li><a href="#c-ifelse">C If...Else</a></li>
+<li><a href="#c-switch">C Switch</a></li>
+<li><a href="#c-while-loop">C While Loop</a></li>
+<li><a href="#c-for-loop">C For Loop</a></li>
+<li><a href="#c-breakcontinue">C Break/Continue</a></li>
+<li><a href="#c-arrays">C Arrays</a></li>
+<li><a href="#c-strings">C Strings</a></li>
+<li><a href="#c-user-input">C User Input</a></li>
+<li><a href="#c-memory-address">C Memory Address</a></li>
+<li><a href="#c-pointers">C Pointers</a></li>
+<li><a href="#c-functions">C Functions</a></li>
+<li><a href="#c-function-parameters">C Function Parameters</a></li>
+<li><a href="#c-function-declaration">C Function Declaration</a></li>
+<li><a href="#c-recursion">C Recursion</a></li>
+<li><a href="#c-math-functions">C Math Functions</a></li>
+<li><a href="#c-files">C Files</a></li>
+<li><a href="#c-create-files">C Create Files</a></li>
+<li><a href="#c-write-to-files">C Write To Files</a></li>
+<li><a href="#c-read-files">C Read Files</a></li>
+<li><a href="#c-structures">C Structures</a></li>
+<li><a href="#c-enums">C Enums</a></li>
+<li><a href="#advence">Advance Topic</a></li>
+</ul>
+<h2 id="c-syntax">C Syntax</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Hello, world!\n"</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h2 id="c-output">C Output</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"This is output in C.\n"</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h2 id="c-comments">C Comments</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-comment">// This is a single-line comment</span>
+    <span class="hljs-comment">/* This is a
+       multi-line comment */</span>
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Hello, world!\n"</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h4 id="1-understanding-variables-and-data-types">1. Understanding Variables and Data Types</h4>
+<p><img src="https://media.geeksforgeeks.org/wp-content/uploads/20220808115138/DatatypesInC.jpg" alt="Variables and Data Types"></p>
+<ul>
+<li><strong>Description:</strong> This breakdown illustrates the concept of variables and different data types in C programming. It covers how to declare and initialize variables and demonstrates basic data manipulation.</li>
+</ul>
+<h2 id="c-variables">C Variables</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">int</span> age = <span class="hljs-number">25</span>;
+    <span class="hljs-keyword">float</span> weight = <span class="hljs-number">65.5</span>;
+    <span class="hljs-keyword">char</span> gender = <span class="hljs-string">'M'</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h2 id="c-data-types">C Data Types</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">int</span> integerVariable = <span class="hljs-number">10</span>;
+    <span class="hljs-keyword">float</span> floatVariable = <span class="hljs-number">3.14</span>;
+    <span class="hljs-keyword">char</span> charVariable = <span class="hljs-string">'A'</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h2 id="c-constants">C Constants</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> PI 3.14</span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> MAX_VALUE = <span class="hljs-number">100</span>;
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"PI: %f\n"</span>, PI);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Max Value: %d\n"</span>, MAX_VALUE);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h2 id="c-operators">C Operators</h2>
+<pre><code class="lang-c"><span class="hljs-comment">#include &lt;stdio.h&gt;</span>
+
+<span class="hljs-keyword">int</span> main() {
+    <span class="hljs-keyword">int</span> a = <span class="hljs-number">10</span>, b = <span class="hljs-number">5</span>;
+    <span class="hljs-keyword">printf</span>(<span class="hljs-string">"Addition: %d\n"</span>, a + b);
+    <span class="hljs-keyword">printf</span>(<span class="hljs-string">"Subtraction: %d\n"</span>, a - b);
+    <span class="hljs-keyword">printf</span>(<span class="hljs-string">"Multiplication: %d\n"</span>, a * b);
+    <span class="hljs-keyword">printf</span>(<span class="hljs-string">"Division: %d\n"</span>, a / b);
+    <span class="hljs-keyword">printf</span>(<span class="hljs-string">"Modulus: %d\n"</span>, a % b);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h2 id="c-booleans">C Booleans</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdbool.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">bool</span> isTrue = <span class="hljs-literal">true</span>;
+    <span class="hljs-keyword">bool</span> isFalse = <span class="hljs-literal">false</span>;
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"isTrue: %d\n"</span>, isTrue);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"isFalse: %d\n"</span>, isFalse);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h4 id="2-control-structures-if-else-statements">2. Control Structures: if-else Statements</h4>
+<p><img src="https://media.geeksforgeeks.org/wp-content/uploads/20230220123250/flowchart_of_if_else_in_c.png" alt="if-else Statements"></p>
+<ul>
+<li><strong>Description:</strong> This breakdown demonstrates the usage of if-else statements in C programming for decision-making. It explains the syntax and usage of if-else statements with examples.</li>
+</ul>
+<h2 id="c-if-else">C If...Else</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">int</span> num = <span class="hljs-number">10</span>;
+    <span class="hljs-keyword">if</span> (num &gt; <span class="hljs-number">0</span>) {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Positive number\n"</span>);
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Negative number\n"</span>);
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h2 id="c-switch">C Switch</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">int</span> day = <span class="hljs-number">3</span>;
+    <span class="hljs-keyword">switch</span>(day) {
+        <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
+            <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Monday\n"</span>);
+            <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>:
+            <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Tuesday\n"</span>);
+            <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-number">3</span>:
+            <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Wednesday\n"</span>);
+            <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">default</span>:
+            <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Invalid day\n"</span>);
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h4 id="3-loops-for-and-while">3. Loops: for and while</h4>
+<p><img src="https://media.geeksforgeeks.org/wp-content/uploads/20220927171802/WhileloopinC2.png" alt="for and while Loops"></p>
+<ul>
+<li><strong>Description:</strong> This breakdown covers the implementation of for and while loops in C programming for iterative tasks. It provides examples of using loops for counting, iterating over arrays, and other common scenarios.</li>
+</ul>
+<h2 id="c-while-loop">C While Loop</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">5</span>) {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>, i);
+        i++;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h2 id="c-for-loop">C For Loop</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>, i);
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h2 id="c-break-continue">C Break/Continue</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) {
+        <span class="hljs-keyword">if</span> (i == <span class="hljs-number">5</span>) {
+            <span class="hljs-keyword">break</span>; <span class="hljs-comment">// Exit the loop</span>
+        }
+        <span class="hljs-keyword">if</span> (i % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>) {
+            <span class="hljs-keyword">continue</span>; <span class="hljs-comment">// Skip even numbers</span>
+        }
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>, i);
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h2 id="c-arrays">C Arrays</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">int</span> arr[<span class="hljs-number">5</span>] = {<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>};
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>, arr[i]);
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h2 id="c-strings">C Strings</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;string.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">char</span> str[] = <span class="hljs-string">"Hello, world!"</span>;
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%s\n"</span>, str);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Length: %d\n"</span>, <span class="hljs-built_in">strlen</span>(str));
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h2 id="c-user-input">C User Input</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">int</span> num;
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Enter a number: "</span>);
+    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>, &amp;num);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"You entered: %d\n"</span>, num);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h2 id="c-memory-address">C Memory Address</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">int</span> num = <span class="hljs-number">10</span>;
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Value: %d\n"</span>, num);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Memory Address: %p\n"</span>, &amp;num);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h2 id="c-pointers">C Pointers</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-built_in">int</span> main() {
+    <span class="hljs-built_in">int</span> num = <span class="hljs-number">10</span><span class="hljs-comment">;</span>
+    <span class="hljs-built_in">int</span> *<span class="hljs-built_in">ptr</span> = &amp;num<span class="hljs-comment">;</span>
+    printf(<span class="hljs-string">"Value: %d\n"</span>, *<span class="hljs-built_in">ptr</span>)<span class="hljs-comment">;</span>
+    printf(<span class="hljs-string">"Memory Address: %p\n"</span>, <span class="hljs-built_in">ptr</span>)<span class="hljs-comment">;</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span><span class="hljs-comment">;</span>
+}
+</code></pre>
+<h2 id="c-functions">C Functions</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">add</span><span class="hljs-params">(<span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b)</span> </span>{
+    <span class="hljs-keyword">return</span> a + b;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Sum: %d\n"</span>, add(<span class="hljs-number">5</span>, <span class="hljs-number">3</span>));
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h2 id="c-function-parameters">C Function Parameters</h2>
+<pre><code class="lang-c">
+
+<span class="cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">greet</span><span class="hljs-params">(<span class="hljs-keyword">char</span> name[])</span> </span>{
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Hello, %s!\n"</span>, name);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">char</span> name[] = <span class="hljs-string">"John"</span>;
+    greet(name);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</span>
+</code></pre>
+<h2 id="c-function-declaration">C Function Declaration</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">add</span><span class="hljs-params">(<span class="hljs-keyword">int</span>, <span class="hljs-keyword">int</span>)</span></span>;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Sum: %d\n"</span>, add(<span class="hljs-number">5</span>, <span class="hljs-number">3</span>));
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">add</span><span class="hljs-params">(<span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b)</span> </span>{
+    <span class="hljs-keyword">return</span> a + b;
+}
+</code></pre>
+<h2 id="c-recursion">C Recursion</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">factorial</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{
+    <span class="hljs-keyword">if</span> (n == <span class="hljs-number">0</span> || n == <span class="hljs-number">1</span>) {
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">return</span> n * factorial(n - <span class="hljs-number">1</span>);
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">int</span> num = <span class="hljs-number">5</span>;
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Factorial of %d: %d\n"</span>, num, factorial(num));
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h2 id="c-math-functions">C Math Functions</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;math.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Square root of 16: %f\n"</span>, <span class="hljs-built_in">sqrt</span>(<span class="hljs-number">16</span>));
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Absolute value of -5: %f\n"</span>, <span class="hljs-built_in">fabs</span>(<span class="hljs-number">-5</span>));
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Power of 2^3: %f\n"</span>, <span class="hljs-built_in">pow</span>(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>));
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h2 id="c-files">C Files</h2>
+<pre><code class="lang-c"><span class="hljs-comment">#include &lt;stdio.h&gt;</span>
+
+int main() {
+    FILE *<span class="hljs-built_in">fp</span><span class="hljs-comment">;</span>
+    <span class="hljs-built_in">fp</span> = fopen(<span class="hljs-string">"file.txt"</span>, <span class="hljs-string">"w"</span>)<span class="hljs-comment">;</span>
+    fprintf(<span class="hljs-built_in">fp</span>, <span class="hljs-string">"This is a file.\n"</span>)<span class="hljs-comment">;</span>
+    fclose(<span class="hljs-built_in">fp</span>)<span class="hljs-comment">;</span>
+    return <span class="hljs-number">0</span><span class="hljs-comment">;</span>
+}
+</code></pre>
+<h2 id="c-create-files">C Create Files</h2>
+<pre><code class="lang-c"><span class="hljs-comment">#include &lt;stdio.h&gt;</span>
+
+int main() {
+    FILE *<span class="hljs-built_in">fp</span><span class="hljs-comment">;</span>
+    <span class="hljs-built_in">fp</span> = fopen(<span class="hljs-string">"newfile.txt"</span>, <span class="hljs-string">"w"</span>)<span class="hljs-comment">;</span>
+    fclose(<span class="hljs-built_in">fp</span>)<span class="hljs-comment">;</span>
+    return <span class="hljs-number">0</span><span class="hljs-comment">;</span>
+}
+</code></pre>
+<h2 id="c-write-to-files">C Write To Files</h2>
+<pre><code class="lang-c"><span class="hljs-comment">#include &lt;stdio.h&gt;</span>
+
+int main() {
+    FILE *<span class="hljs-built_in">fp</span><span class="hljs-comment">;</span>
+    <span class="hljs-built_in">fp</span> = fopen(<span class="hljs-string">"file.txt"</span>, <span class="hljs-string">"w"</span>)<span class="hljs-comment">;</span>
+    fprintf(<span class="hljs-built_in">fp</span>, <span class="hljs-string">"This is a file.\n"</span>)<span class="hljs-comment">;</span>
+    fclose(<span class="hljs-built_in">fp</span>)<span class="hljs-comment">;</span>
+    return <span class="hljs-number">0</span><span class="hljs-comment">;</span>
+}
+</code></pre>
+<h2 id="c-read-files">C Read Files</h2>
+<pre><code class="lang-c"><span class="hljs-comment">#include &lt;stdio.h&gt;</span>
+
+int main() {
+    FILE *<span class="hljs-built_in">fp</span><span class="hljs-comment">;</span>
+    char str[<span class="hljs-number">50</span>]<span class="hljs-comment">;</span>
+    <span class="hljs-built_in">fp</span> = fopen(<span class="hljs-string">"file.txt"</span>, <span class="hljs-string">"r"</span>)<span class="hljs-comment">;</span>
+    fscanf(<span class="hljs-built_in">fp</span>, <span class="hljs-string">"%s"</span>, str)<span class="hljs-comment">;</span>
+    printf(<span class="hljs-string">"Read String: %s\n"</span>, str)<span class="hljs-comment">;</span>
+    fclose(<span class="hljs-built_in">fp</span>)<span class="hljs-comment">;</span>
+    return <span class="hljs-number">0</span><span class="hljs-comment">;</span>
+}
+</code></pre>
+<h2 id="c-structures">C Structures</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-keyword">struct</span> Person {
+    <span class="hljs-keyword">char</span> name[<span class="hljs-number">50</span>];
+    <span class="hljs-keyword">int</span> age;
+};
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">struct</span> Person person1;
+    <span class="hljs-built_in">strcpy</span>(person1.name, <span class="hljs-string">"John"</span>);
+    person1.age = <span class="hljs-number">30</span>;
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Name: %s\n"</span>, person1.name);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Age: %d\n"</span>, person1.age);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h2 id="c-enums">C Enums</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-keyword">enum</span> Weekday {
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday
+};
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">enum</span> Weekday today = Tuesday;
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Today is %d\n"</span>, today);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h2 id="advence">advence</h2>
+<h3 id="structures-and-unions-">Structures and Unions:</h3>
+<p><strong>Structures</strong> allow you to group different data types together under one name. They are useful for organizing data in a meaningful way. Example:</p>
+<pre><code class="lang-c"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Person</span></span> {
+    <span class="hljs-keyword">char</span> name[<span class="hljs-number">50</span>];
+    <span class="hljs-keyword">int</span> age;
+    <span class="hljs-keyword">float</span> salary;
+};
+</code></pre>
+<p><strong>Unions</strong> are similar to structures but allocate enough memory to hold the largest member. Only one member of the union can be accessed at a time. Example:</p>
+<pre><code class="lang-c"><span class="hljs-class"><span class="hljs-keyword">union</span> <span class="hljs-title">Data</span> {</span>
+    int i;
+    float f;
+    char str[<span class="hljs-number">20</span>];
+};
+</code></pre>
+<h3 id="file-handling-">File Handling:</h3>
+<p>File handling in C involves operations like opening, reading, writing, and closing files. Example of writing to a file:</p>
+<pre><code class="lang-c">FILE *<span class="hljs-built_in">fp</span><span class="hljs-comment">;</span>
+<span class="hljs-built_in">fp</span> = fopen(<span class="hljs-string">"file.txt"</span>, <span class="hljs-string">"w"</span>)<span class="hljs-comment">;</span>
+fprintf(<span class="hljs-built_in">fp</span>, <span class="hljs-string">"Hello, File World!"</span>)<span class="hljs-comment">;</span>
+fclose(<span class="hljs-built_in">fp</span>)<span class="hljs-comment">;</span>
+</code></pre>
+<h3 id="dynamic-memory-allocation-">Dynamic Memory Allocation:</h3>
+<p>C provides functions like <code>malloc()</code>, <code>calloc()</code>, <code>realloc()</code>, and <code>free()</code> for dynamic memory allocation. Example:</p>
+<pre><code class="lang-c"><span class="hljs-built_in">int</span> *<span class="hljs-built_in">ptr</span><span class="hljs-comment">;</span>
+<span class="hljs-built_in">ptr</span> = (<span class="hljs-built_in">int</span> *) malloc(<span class="hljs-number">5</span> * sizeof(<span class="hljs-built_in">int</span>))<span class="hljs-comment">;</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-built_in">ptr</span> != <span class="hljs-literal">NULL</span>) {
+    <span class="hljs-built_in">ptr</span>[<span class="hljs-number">0</span>] = <span class="hljs-number">1</span><span class="hljs-comment">;</span>
+    <span class="hljs-built_in">ptr</span>[<span class="hljs-number">1</span>] = <span class="hljs-number">2</span><span class="hljs-comment">;</span>
+    // Use <span class="hljs-built_in">ptr</span>
+    free(<span class="hljs-built_in">ptr</span>)<span class="hljs-comment">;</span>
+}
+</code></pre>
+<h3 id="linked-lists-">Linked Lists:</h3>
+<p>A linked list is a linear data structure where elements are not stored at contiguous memory locations. Each element (node) contains data and a pointer to the next node. Example:</p>
+<pre><code class="lang-c">struct <span class="hljs-keyword">Node</span> <span class="hljs-title">{
+    int</span> data;
+    struct <span class="hljs-keyword">Node</span> <span class="hljs-title">*next</span>;
+};
+
+// Example of creating nodes <span class="hljs-keyword">and</span> linking them
+struct <span class="hljs-keyword">Node</span> <span class="hljs-title">*head</span> = NULL;
+struct <span class="hljs-keyword">Node</span> <span class="hljs-title">*second</span> = NULL;
+struct <span class="hljs-keyword">Node</span> <span class="hljs-title">*third</span> = NULL;
+
+head = malloc(sizeof(struct <span class="hljs-keyword">Node</span><span class="hljs-title">));
+second</span> = malloc(sizeof(struct <span class="hljs-keyword">Node</span><span class="hljs-title">));
+third</span> = malloc(sizeof(struct <span class="hljs-keyword">Node</span><span class="hljs-title">));
+
+head-</span>&gt;data = <span class="hljs-number">1</span>;
+head-&gt;next = second;
+
+second-&gt;data = <span class="hljs-number">2</span>;
+second-&gt;next = third;
+
+third-&gt;data = <span class="hljs-number">3</span>;
+third-&gt;next = NULL;
+</code></pre>
+<h3 id="stack-and-queue-">Stack and Queue:</h3>
+<p><strong>Stack</strong> follows the Last In First Out (LIFO) principle. Example:</p>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> MAX 100</span>
+<span class="hljs-keyword">int</span> <span class="hljs-built_in">stack</span>[MAX];
+<span class="hljs-keyword">int</span> top = <span class="hljs-number">-1</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">push</span><span class="hljs-params">(<span class="hljs-keyword">int</span> item)</span> </span>{
+    <span class="hljs-keyword">if</span> (top &gt;= MAX - <span class="hljs-number">1</span>) {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Stack Overflow"</span>);
+        <span class="hljs-keyword">return</span>;
+    }
+    <span class="hljs-built_in">stack</span>[++top] = item;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">pop</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">if</span> (top &lt; <span class="hljs-number">0</span>) {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Stack Underflow"</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">stack</span>[top--];
+}
+</code></pre>
+<p><strong>Queue</strong> follows the First In First Out (FIFO) principle. Example:</p>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> MAX 100</span>
+<span class="hljs-keyword">int</span> <span class="hljs-built_in">queue</span>[MAX];
+<span class="hljs-keyword">int</span> front = <span class="hljs-number">-1</span>, rear = <span class="hljs-number">-1</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">enqueue</span><span class="hljs-params">(<span class="hljs-keyword">int</span> item)</span> </span>{
+    <span class="hljs-keyword">if</span> (rear == MAX - <span class="hljs-number">1</span>) {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Queue Overflow"</span>);
+        <span class="hljs-keyword">return</span>;
+    }
+    <span class="hljs-keyword">if</span> (front == <span class="hljs-number">-1</span>) front = <span class="hljs-number">0</span>;
+    <span class="hljs-built_in">queue</span>[++rear] = item;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">dequeue</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">if</span> (front == <span class="hljs-number">-1</span> || front &gt; rear) {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Queue Underflow"</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">queue</span>[front++];
+}
+</code></pre>
+<h3 id="trees-">Trees:</h3>
+<p>Trees are hierarchical data structures with a root node and child nodes. Example:</p>
+<pre><code class="lang-c">struct TreeNode {
+    int <span class="hljs-keyword">data</span>;
+    struct TreeNode *left;
+    struct TreeNode *right;
+};
+
+<span class="hljs-comment">// Example of creating a tree</span>
+struct TreeNode *root = NULL;
+root = malloc(sizeof(struct TreeNode));
+<span class="hljs-function"><span class="hljs-title">root</span>-&gt;</span><span class="hljs-keyword">data</span> = <span class="hljs-number">1</span>;
+<span class="hljs-function"><span class="hljs-title">root</span>-&gt;</span>left = malloc(sizeof(struct TreeNode));
+<span class="hljs-function"><span class="hljs-title">root</span>-&gt;</span><span class="hljs-function"><span class="hljs-title">left</span>-&gt;</span><span class="hljs-keyword">data</span> = <span class="hljs-number">2</span>;
+<span class="hljs-function"><span class="hljs-title">root</span>-&gt;</span><span class="hljs-function"><span class="hljs-title">left</span>-&gt;</span>left = NULL;
+<span class="hljs-function"><span class="hljs-title">root</span>-&gt;</span><span class="hljs-function"><span class="hljs-title">left</span>-&gt;</span>right = NULL;
+<span class="hljs-function"><span class="hljs-title">root</span>-&gt;</span>right = malloc(sizeof(struct TreeNode));
+<span class="hljs-function"><span class="hljs-title">root</span>-&gt;</span><span class="hljs-function"><span class="hljs-title">right</span>-&gt;</span><span class="hljs-keyword">data</span> = <span class="hljs-number">3</span>;
+<span class="hljs-function"><span class="hljs-title">root</span>-&gt;</span><span class="hljs-function"><span class="hljs-title">right</span>-&gt;</span>left = NULL;
+<span class="hljs-function"><span class="hljs-title">root</span>-&gt;</span><span class="hljs-function"><span class="hljs-title">right</span>-&gt;</span>right = NULL;
+</code></pre>
+<p>Certainly! Here are brief explanations and examples of more searching and sorting algorithms in C:</p>
+<h3 id="sorting-algorithms-">Sorting Algorithms:</h3>
+<h4 id="bubble-sort-">Bubble Sort:</h4>
+<p>Bubble Sort repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.</p>
+<pre><code class="lang-c">void <span class="hljs-keyword">bubbleSort(int </span>arr[], int n) {
+    int i, <span class="hljs-keyword">j;
+</span>    for (i = <span class="hljs-number">0</span><span class="hljs-comment">; i &lt; n-1; i++) {</span>
+        for (<span class="hljs-keyword">j </span>= <span class="hljs-number">0</span><span class="hljs-comment">; j &lt; n-i-1; j++) {</span>
+            if (arr[<span class="hljs-keyword">j] </span>&gt; arr[<span class="hljs-keyword">j+1]) </span>{
+                int temp = arr[<span class="hljs-keyword">j];
+</span>                arr[<span class="hljs-keyword">j] </span>= arr[<span class="hljs-keyword">j+1];
+</span>                arr[<span class="hljs-keyword">j+1] </span>= temp<span class="hljs-comment">;</span>
+            }
+        }
+    }
+}
+</code></pre>
+<h4 id="quick-sort-">Quick Sort:</h4>
+<p>Quick Sort is a divide-and-conquer algorithm that selects a pivot element and partitions the array around the pivot.</p>
+<pre><code class="lang-c"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">swap</span><span class="hljs-params">(<span class="hljs-keyword">int</span>* a, <span class="hljs-keyword">int</span>* b)</span> </span>{
+    <span class="hljs-keyword">int</span> temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">partition</span><span class="hljs-params">(<span class="hljs-keyword">int</span> arr[], <span class="hljs-keyword">int</span> low, <span class="hljs-keyword">int</span> high)</span> </span>{
+    <span class="hljs-keyword">int</span> pivot = arr[high];
+    <span class="hljs-keyword">int</span> i = (low - <span class="hljs-number">1</span>);
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = low; j &lt;= high - <span class="hljs-number">1</span>; j++) {
+        <span class="hljs-keyword">if</span> (arr[j] &lt; pivot) {
+            i++;
+            swap(&amp;arr[i], &amp;arr[j]);
+        }
+    }
+    swap(&amp;arr[i + <span class="hljs-number">1</span>], &amp;arr[high]);
+    <span class="hljs-keyword">return</span> (i + <span class="hljs-number">1</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">quickSort</span><span class="hljs-params">(<span class="hljs-keyword">int</span> arr[], <span class="hljs-keyword">int</span> low, <span class="hljs-keyword">int</span> high)</span> </span>{
+    <span class="hljs-keyword">if</span> (low &lt; high) {
+        <span class="hljs-keyword">int</span> pi = partition(arr, low, high);
+
+        quickSort(arr, low, pi - <span class="hljs-number">1</span>);
+        quickSort(arr, pi + <span class="hljs-number">1</span>, high);
+    }
+}
+</code></pre>
+<h4 id="selection-sort-">Selection Sort:</h4>
+<p>Selection Sort repeatedly finds the minimum element from the unsorted part of the array and swaps it with the first unsorted element.</p>
+<pre><code class="lang-c">void selectionSort(int arr[], int n) {
+    int i, <span class="hljs-keyword">j, </span>min_idx<span class="hljs-comment">;</span>
+    for (i = <span class="hljs-number">0</span><span class="hljs-comment">; i &lt; n-1; i++) {</span>
+        min_idx = i<span class="hljs-comment">;</span>
+        for (<span class="hljs-keyword">j </span>= i+<span class="hljs-number">1</span><span class="hljs-comment">; j &lt; n; j++) {</span>
+            if (arr[<span class="hljs-keyword">j] </span>&lt; arr[min_idx])
+                min_idx = <span class="hljs-keyword">j;
+</span>        }
+        int temp = arr[min_idx]<span class="hljs-comment">;</span>
+        arr[min_idx] = arr[i]<span class="hljs-comment">;</span>
+        arr[i] = temp<span class="hljs-comment">;</span>
+    }
+}
+</code></pre>
+<h4 id="insertion-sort-">Insertion Sort:</h4>
+<p>Insertion Sort builds the final sorted array one item at a time by inserting each item into its correct position.</p>
+<pre><code class="lang-c">void <span class="hljs-keyword">insertionSort(int </span>arr[], int n) {
+    int i, key, <span class="hljs-keyword">j;
+</span>    for (i = <span class="hljs-number">1</span><span class="hljs-comment">; i &lt; n; i++) {</span>
+        key = arr[i]<span class="hljs-comment">;</span>
+        <span class="hljs-keyword">j </span>= i - <span class="hljs-number">1</span><span class="hljs-comment">;</span>
+
+        while (<span class="hljs-keyword">j </span>&gt;= <span class="hljs-number">0</span> &amp;&amp; arr[<span class="hljs-keyword">j] </span>&gt; key) {
+            arr[<span class="hljs-keyword">j </span>+ <span class="hljs-number">1</span>] = arr[<span class="hljs-keyword">j];
+</span>            <span class="hljs-keyword">j--;
+</span>        }
+        arr[<span class="hljs-keyword">j </span>+ <span class="hljs-number">1</span>] = key<span class="hljs-comment">;</span>
+    }
+}
+</code></pre>
+<h3 id="searching-algorithms-">Searching Algorithms:</h3>
+<h4 id="binary-search-">Binary Search:</h4>
+<p>Binary Search works on sorted arrays by repeatedly dividing the search interval in half.</p>
+<pre><code class="lang-c"><span class="hljs-built_in">int</span> binarySearch(<span class="hljs-built_in">int</span> arr[], <span class="hljs-built_in">int</span> l, <span class="hljs-built_in">int</span> r, <span class="hljs-built_in">int</span> x) {
+    <span class="hljs-keyword">while</span> (l &lt;= r) {
+        <span class="hljs-built_in">int</span> <span class="hljs-built_in">mid</span> = l + (r - l) / <span class="hljs-number">2</span>;
+
+        <span class="hljs-keyword">if</span> (arr[<span class="hljs-built_in">mid</span>] == x)
+            return <span class="hljs-built_in">mid</span>;
+
+        <span class="hljs-keyword">if</span> (arr[<span class="hljs-built_in">mid</span>] &lt; x)
+            l = <span class="hljs-built_in">mid</span> + <span class="hljs-number">1</span>;
+        <span class="hljs-keyword">else</span>
+            r = <span class="hljs-built_in">mid</span> - <span class="hljs-number">1</span>;
+    }
+
+    return <span class="hljs-number">-1</span>;
+}
+</code></pre>
+<h4 id="linear-search-">Linear Search:</h4>
+<p>Linear Search sequentially checks each element of the list until a match is found or the whole list has been searched.</p>
+<pre><code class="lang-c"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">linearSearch</span><span class="hljs-params">(<span class="hljs-keyword">int</span> arr[], <span class="hljs-keyword">int</span> n, <span class="hljs-keyword">int</span> x)</span> </span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) {
+        <span class="hljs-keyword">if</span> (arr[i] == x)
+            <span class="hljs-keyword">return</span> i;
+    }
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;
+}
+</code></pre>
+<h3 id="multithreading-">Multithreading:</h3>
+<p>C supports multithreading via libraries like POSIX threads (<code>pthread</code>). Example of creating threads:</p>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;pthread.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> *<span class="hljs-title">printHello</span><span class="hljs-params">(<span class="hljs-keyword">void</span> *threadid)</span> </span>{
+    <span class="hljs-keyword">long</span> tid;
+    tid = (<span class="hljs-keyword">long</span>)threadid;
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Hello World! Thread ID, %ld\n"</span>, tid);
+    pthread_exit(<span class="hljs-literal">NULL</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span> <span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">pthread_t</span> threads[<span class="hljs-number">5</span>];
+    <span class="hljs-keyword">int</span> rc;
+    <span class="hljs-keyword">long</span> t;
+
+    <span class="hljs-keyword">for</span> (t = <span class="hljs-number">0</span>; t &lt; <span class="hljs-number">5</span>; t++) {
+        rc = pthread_create(&amp;threads[t], <span class="hljs-literal">NULL</span>, printHello, (<span class="hljs-keyword">void</span> *)t);
+        <span class="hljs-keyword">if</span> (rc) {
+            <span class="hljs-built_in">printf</span>(<span class="hljs-string">"ERROR; return code from pthread_create() is %d\n"</span>, rc);
+            <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;
+        }
+    }
+
+    pthread_exit(<span class="hljs-literal">NULL</span>);
+}
+</code></pre>
+<h3 id="memory-management-">Memory Management:</h3>
+<p>Involves managing memory efficiently using techniques like malloc, free, and avoiding memory leaks.</p>
+<h3 id="projects">Projects</h3>
+<ol>
+<li><a href="https://github.com/mdsiamulislam/What-about-C/tree/main/Project/Project-01-SimpleToDoList">Simple ToDo List</a></li>
+<li><a href="https://github.com/mdsiamulislam/What-about-C/tree/main/Project/Project-02-Rock-Paper-Scissors-C-Game">Rock Paper Scissors Game</a></li>
+<li><a href="https://github.com/mdsiamulislam/What-about-C/tree/main/Project/Project-03-Simple_C_Quiz_Game">Simple C Quiz Game</a></li>
+<li><a href="https://github.com/mdsiamulislam/What-about-C/tree/main/Project/Project-04-GuessTheNumberGame">Guess The Number Game</a></li>
+<li><a href="https://github.com/mdsiamulislam/What-about-C/tree/main/Project/Project-5-Modern_Periodic_Table">Modern Periodic Table</a></li>
+<li><a href="https://github.com/mdsiamulislam/What-about-C/tree/main/Project/Project-6-Phone_Book">Phone Book</a></li>
+<li><a href="https://github.com/mdsiamulislam/What-about-C/tree/main/Project/Project-7-Billing-System">Billing System</a></li>
+<li><a href="https://github.com/mdsiamulislam/What-about-C/tree/main/Project/Project-8-Library-Management-System">Library Management System</a></li>
+<li><a href="https://github.com/mdsiamulislam/What-about-C/tree/main/Project/Project-9-CountDown">CountDown</a></li>
+<li><a href="https://github.com/mdsiamulislam/What-about-C/tree/main/Project/Project-10-Console_based_calculator">Console-based Calculator</a></li>
+<li><a href="https://github.com/mdsiamulislam/What-about-C/tree/main/Project/Project-11-Calender-App">Calendar App</a></li>
+</ol>
+<h1 id="problem-solutions">Problem Solutions</h1>
+<p>Welcome to the &quot;Problem Solve&quot; section of the repository! Here you&#39;ll find solutions to various programming problems.</p>
+<h2 id="problem-solutions">Problem Solutions</h2>
+<table>
+<thead>
+<tr>
+<th>Problem Name</th>
+<th>Problem Link</th>
+<th>File</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>In Search of an Easy Problem</td>
+<td><a href="https://codeforces.com/problemset/problem/1030/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/1030A_In%20Search%20of%20an%20Easy%20Problem.c">1030A_In Search of an Easy Problem.c</a></td>
+</tr>
+<tr>
+<td>Petya and Strings</td>
+<td><a href="https://codeforces.com/problemset/problem/112/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/112A_Petya%20and%20Strings.c">112A_Petya and Strings.c</a></td>
+</tr>
+<tr>
+<td>Divisibility Problem</td>
+<td><a href="https://codeforces.com/problemset/problem/1328/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/1328A_Divisibility%20Problem.c">1328A_Divisibility Problem.c</a></td>
+</tr>
+<tr>
+<td>Next Round</td>
+<td><a href="https://codeforces.com/problemset/problem/158/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/158A_Next%20Round.c">158A_Next Round.c</a></td>
+</tr>
+<tr>
+<td>YES or YES</td>
+<td><a href="https://codeforces.com/problemset/problem/1703/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/1703A_YES%20or%20YES.c">1703A_YES or YES.c</a></td>
+</tr>
+<tr>
+<td>Sum</td>
+<td></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/1742A_Sum.c">1742A_Sum.c</a></td>
+</tr>
+<tr>
+<td>Drinks</td>
+<td><a href="https://codeforces.com/problemset/problem/200/B">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/200B_Drinks.c">200B_Drinks.c</a></td>
+</tr>
+<tr>
+<td>Is your horseshoe on the other hoof</td>
+<td><a href="https://codeforces.com/problemset/problem/228/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/228A_Is%20your%20horseshoe%20on%20the%20other%20hoof.c">228A_Is your horseshoe on the other hoof.c</a></td>
+</tr>
+<tr>
+<td>Team</td>
+<td><a href="https://codeforces.com/problemset/problem/231/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/231A_Team.c">231A_Team.c</a></td>
+</tr>
+<tr>
+<td>Boy or Girl</td>
+<td><a href="https://codeforces.com/problemset/problem/236/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/236A_Boy%20or%20Girl.c">236A_Boy or Girl.c</a></td>
+</tr>
+<tr>
+<td>Beautiful Matrix</td>
+<td><a href="https://codeforces.com/problemset/problem/263/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/263A_Beautiful%20Matrix.c">263A_Beautiful Matrix.c</a></td>
+</tr>
+<tr>
+<td>Stones on the Table</td>
+<td><a href="https://codeforces.com/problemset/problem/266/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/266A_Stones%20on%20the%20Table.c">266A_Stones on the Table.c</a></td>
+</tr>
+<tr>
+<td>Queue at the School</td>
+<td><a href="https://codeforces.com/problemset/problem/266/B">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/266B_Queue%20at%20the%20School.c">266B_Queue at the School.c</a></td>
+</tr>
+<tr>
+<td>Beautiful Year</td>
+<td><a href="https://codeforces.com/problemset/problem/271/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/271A_Beautiful%20Year.c">271A_Beautiful Year.c</a></td>
+</tr>
+<tr>
+<td>Word Capitalization</td>
+<td><a href="https://codeforces.com/problemset/problem/281/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/281A_Word%20Capitalization.c">281A_Word Capitalization.c</a></td>
+</tr>
+<tr>
+<td>Bit++</td>
+<td><a href="https://codeforces.com/problemset/problem/282/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/282A_Bit%2B%2B.c">282A_Bit++.c</a></td>
+</tr>
+<tr>
+<td>Helpful Maths</td>
+<td><a href="https://codeforces.com/problemset/problem/339/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/339A_Helpful%20Maths.c">339A_Helpful Maths.c</a></td>
+</tr>
+<tr>
+<td>Magnets</td>
+<td><a href="https://codeforces.com/problemset/problem/344/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/344A_Magnets.c">344A_Magnets.c</a></td>
+</tr>
+<tr>
+<td>George and Accommodation</td>
+<td><a href="https://codeforces.com/problemset/problem/467/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/467A_George%20and%20Accommodation.c">467A_George and Accommodation.c</a></td>
+</tr>
+<tr>
+<td>I Wanna Be the Guy</td>
+<td><a href="https://codeforces.com/problemset/problem/469/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/469A_I%20Wanna%20Be%20the%20Guy.c">469A_I Wanna Be the Guy.c</a></td>
+</tr>
+<tr>
+<td>Calculating Function</td>
+<td><a href="https://codeforces.com/problemset/problem/486/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/486A_Calculating%20Function.c">486A_Calculating Function.c</a></td>
+</tr>
+<tr>
+<td>Watermelon</td>
+<td><a href="https://codeforces.com/problemset/problem/4/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/4A_Watermelon.c">4A_Watermelon.c</a></td>
+</tr>
+<tr>
+<td>Domino piling</td>
+<td><a href="https://codeforces.com/problemset/problem/50/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/50A_Domino%20piling.c">50A_Domino piling.c</a></td>
+</tr>
+<tr>
+<td>Soldier and Bananas</td>
+<td><a href="https://codeforces.com/problemset/problem/546/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/546A_Soldier%20and%20Bananas.c">546A_Soldier and Bananas.c</a></td>
+</tr>
+<tr>
+<td>Ultra-Fast Mathematician</td>
+<td><a href="https://codeforces.com/problemset/problem/61/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/61A_Ultra-Fast%20Mathematician.c">61A_Ultra-Fast Mathematician.c</a></td>
+</tr>
+<tr>
+<td>Vanya and Fence</td>
+<td><a href="https://codeforces.com/problemset/problem/677/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/677A_Vanya%20and%20Fence.c">677A_Vanya and Fence.c</a></td>
+</tr>
+<tr>
+<td>Hulk</td>
+<td><a href="https://codeforces.com/problemset/problem/705/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/705A_Hulk.c">705A_Hulk.c</a></td>
+</tr>
+<tr>
+<td>Way Too Long Words</td>
+<td><a href="https://codeforces.com/problemset/problem/71/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/71A_Way%20Too%20Long%20Words.c">71A_Way Too Long Words.c</a></td>
+</tr>
+<tr>
+<td>Anton and Danik</td>
+<td><a href="https://codeforces.com/problemset/problem/734/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/734A_Anton%20and%20Danik.c">734A_Anton and Danik.c</a></td>
+</tr>
+<tr>
+<td>Bear and Big Brother</td>
+<td><a href="https://codeforces.com/problemset/problem/791/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/791A_Bear%20and%20Big%20Brother.c">791A_Bear and Big Brother.c</a></td>
+</tr>
+<tr>
+<td>Hit the Lottery</td>
+<td><a href="https://codeforces.com/problemset/problem/996/A">Problem Link</a></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/996A_Hit%20the%20Lottery.c">996A_Hit the Lottery.c</a></td>
+</tr>
+<tr>
+<td>Chat room</td>
+<td></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/Chat%20room.c">Chat room.c</a></td>
+</tr>
+<tr>
+<td>Football</td>
+<td></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/Football.c">Football.c</a></td>
+</tr>
+<tr>
+<td>Gravity Flip</td>
+<td></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/Gravity%20Flip.c">Gravity Flip.c</a></td>
+</tr>
+<tr>
+<td>HQ9+</td>
+<td></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/HQ9%2B.c">HQ9+.c</a></td>
+</tr>
+<tr>
+<td>Lucky Division</td>
+<td></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/Lucky%20Division.c">Lucky Division.c</a></td>
+</tr>
+<tr>
+<td>Lucky</td>
+<td></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/Lucky.c">Lucky.c</a></td>
+</tr>
+<tr>
+<td>String Task</td>
+<td></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/String%20Task.c">String Task.c</a></td>
+</tr>
+<tr>
+<td>team</td>
+<td></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/team.c">team.c</a></td>
+</tr>
+<tr>
+<td>theatresquare</td>
+<td></td>
+<td><a href="https://github.com/mdsiamulislam/What-about-C/blob/main/Problem%20Solve/theatresquare.c">theatresquare.c</a></td>
+</tr>
+</tbody>
+</table>
+<p>Feel free to explore the solutions to these problems. Happy coding!</p>
+<h2 id="contributors">Contributors</h2>
+<ul>
+<li><a href="https://github.com/mdsiamulislam">Md Siamul Islam Soaib</a> - Creator and maintainer of this repository.</li>
+</ul>
+<h2 id="license">License</h2>
+<p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
+<hr>
+<p>Thank you for exploring these C programming examples and explanations! Special thanks to ChatGPT and W3Schools for assisting in this endeavor.</p>
+</body></html>
